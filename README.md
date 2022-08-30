@@ -2,7 +2,7 @@
 
 Netlify Link:- https://whats-app-clone-9a960.web.app/;
 
-In case if deployment link does not work you can fork it and see.
+In case if deployment link does not work you can fork it and check.
 
 # Screenshots
 ![Screenshot ](https://user-images.githubusercontent.com/68656122/131282398-a5c67f00-55e4-4689-bcfa-7a55330d5f6c.png)
