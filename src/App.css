@@ -1,0 +1,47 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Box {
+  display: flex;
+  background-color: #ededed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Projects {
+  flex: 0.85;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("whatsapp-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #054740;
+  border: 1px solid red;
+}
+
+.project__info img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .app__body {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .app__body {
+    overflow: auto;
+  }
+  .app__body {
+    overflow: auto;
+  }
+  .project__info {
+    display: none;
+  }
+}

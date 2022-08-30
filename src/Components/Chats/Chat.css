@@ -1,0 +1,176 @@
+.chat {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+}
+.chatHeader {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.chatHeaderInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+.chatHeaderInfo > p {
+  color: gray;
+  font-size: 13px;
+}
+.chatHeaderRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60px;
+}
+
+.chatBody {
+  flex: 1;
+  background-image: url("../../whatsapp-original-bg.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chatBody::-webkit-scrollbar {
+  display: none;
+}
+
+.chatMessage {
+  position: relative;
+  justify-content: space-between;
+  min-width: 120px;
+  padding: 7px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 50px;
+  max-width: 270px;
+  word-wrap: break-word !important;
+  word-break: keep-all;
+}
+
+.chatName {
+  position: absolute;
+  top: -16px;
+  font-weight: 700;
+  font-size: x-small;
+}
+.chatReceiver {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+.chat__timestamp {
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
+  font-size: xx-small;
+  word-wrap: normal !important;
+  word-break: keep-all;
+}
+.chatFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+.chatFooter > form {
+  flex: 1;
+  display: flex;
+}
+.chatFooter > form > input {
+  border-radius: 30px;
+  margin: 5px 10px;
+  padding: 9px 12px 11px;
+  border: none;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  width: inherit;
+  min-width: 0;
+  min-height: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  outline: none;
+  will-change: width;
+}
+.chatFooter > form > button {
+  display: none;
+}
+.chatFooter > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
+
+.chatHeaderRight .dropdown {
+  position: relative;
+}
+
+.chatHeaderRight .dropdown__list {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1;
+}
+.chatHeaderRight .hide {
+  display: none;
+}
+.chatHeaderRight .dropdown ul {
+  border-radius: 5px;
+  width: 120px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+.chatHeaderRight .dropdown__list ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chatHeaderRight .dropdown__list ul li:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+.Chat {
+  display: none;
+}
+
+@media screen and (max-width: 630px) {
+  .chat {
+    flex: 1;
+    height: 100vh;
+  }
+  .chat .MuiIconButton-root {
+    padding: 0 !important;
+  }
+  .chatBody {
+    padding: 30px 20px;
+  }
+  .chatMessage {
+    max-width: 200px;
+  }
+  .chatHeader {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .chatHeader .MuiAvatar-root {
+    margin-left: 10px;
+  }
+  .chatFooter {
+    padding: 0 10px;
+  }
+  .attach__file {
+    display: none !important;
+  }
+  .chatHeaderRight .dropdown__list {
+    top: 40px;
+    right: 10px;
+  }
+}
